@@ -1,6 +1,6 @@
 .reset-button {
   background: #ea2020;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   padding: 1rem;
   color: white;
   opacity: .8;
@@ -8,6 +8,10 @@
   box-shadow: 6px 8px 34px -8px rgb(92 92 92 / 90%);
   -webkit-box-shadow: 6px 8px 34px -8px rgb(92 92 92 / 90%);
   -moz-box-shadow: 6px 8px 34px -8px rgba(92,92,92,0.9);
+
+  @media (min-width: 420px) {
+    font-size: 1.75rem;
+  }
 
   &:hover {
     cursor: pointer;

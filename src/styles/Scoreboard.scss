@@ -13,10 +13,6 @@
   }
 }
 
-.scoreboard-caption {
-  font-size: 4rem;
-}
-
 .scoreboard {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -63,6 +59,8 @@
   visibility: hidden;
   text-align: center;
 
+  .winner-X .x &,
+  .winner-O .o &,
   .active & {
     visibility: visible;
   }
