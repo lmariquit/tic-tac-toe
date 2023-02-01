@@ -55,7 +55,6 @@ function App() {
         setStreak={setStreak}
         winArray={winArray}
         setWinArray={setWinArray}
-        winningLineState={winningLineState}
         setWinningLineState={setWinningLineState}
         scoreX={scoreX}
         setScoreX={setScoreX}

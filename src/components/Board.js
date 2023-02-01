@@ -3,7 +3,6 @@ import "../styles/Board.scss"
 
 const Board = ({
   gameBoard,
-  board,
   turnCount,
   setTurnCount,
   activePlayer,
@@ -14,7 +13,6 @@ const Board = ({
   setWinArray,
   streak,
   setStreak,
-  winningLineState,
   setWinningLineState,
   scoreX,
   setScoreX,
@@ -42,7 +40,7 @@ const Board = ({
       setOSelections(oSelections => populateMap(oSelections, row, column))
     }
     setBoardState(newBoardState)
-    setTurnCount(turnCount => turnCount + 1)
+    setTurnCount(turnCount + 1)
     checkForWinner()
   }
 
@@ -110,14 +108,14 @@ const Board = ({
 
   const endGame =(winner, winningLine) => {
     if (winner === "X") {
-      setScoreX(scoreX => scoreX + 1)
+      setScoreX(scoreX + 1)
     } else {
-      setScoreO(scoreO => scoreO + 1)
+      setScoreO(scoreO + 1)
     }
     setWinner(winner)
     setWinArray(winArray => [...winArray, winner])
     if (winner === winArray[winArray.length - 1]) {
-      setStreak(streak => streak + 1)
+      setStreak(streak + 1)
     } else {
       setStreak(1)
     }
@@ -126,7 +124,6 @@ const Board = ({
   }
 
   const endHover = winner => {
-    console.log(winner, activePlayer)
     if (winner === "X") {
       gameBoard.classList.add("complete", "winner-x")
     } else {
