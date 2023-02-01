@@ -1,0 +1,17 @@
+.reset-button {
+  background: #ea2020;
+  font-size: 1.75rem;
+  padding: 1rem;
+  color: white;
+  opacity: .8;
+  border-radius: 4px;
+  box-shadow: 6px 8px 34px -8px rgb(92 92 92 / 90%);
+  -webkit-box-shadow: 6px 8px 34px -8px rgb(92 92 92 / 90%);
+  -moz-box-shadow: 6px 8px 34px -8px rgba(92,92,92,0.9);
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .25s ease-out;
+  }
+}
